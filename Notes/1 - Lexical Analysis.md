@@ -15,3 +15,10 @@ Podem ser usadas para especificar palavras que traduzam partes da linguagem do *
 
 É necessário transformar os autómatos NFA em DFA para poderem ser programados. `E-closure` de um estado é o conjunto de estados em que a máquina poderá estar a partir desse seguindo apenas transições "e". No pior dos casos, a tradução de um NFA com N estados pode originar um DFA de 2^N estados.
 
+A `minimização de DFAs` é feita por refinamento, identificando estados equivalentes a partir das transições originais.
+
+### Kleene Construction
+
+Transformação de DFAs em expressões regulares. É um algoritmo iterativo de programação dinâmica. 
+
+![Lexical](../Images/Lexical.png)
