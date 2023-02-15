@@ -22,3 +22,9 @@ A `minimização de DFAs` é feita por refinamento, identificando estados equiva
 Transformação de DFAs em expressões regulares. É um algoritmo iterativo de programação dinâmica. 
 
 ![Lexical](../Images/Lexical.png)
+
+## Automatização da tradução
+
+A tradução completa pode ser efetuada automaticamente através de ferramentas como `LEX`.
+
+<TODO>
