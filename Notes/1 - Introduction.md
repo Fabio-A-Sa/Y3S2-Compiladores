@@ -9,11 +9,11 @@ Java usa as duas versões, numa `Just-in-time compilation`: compila as partes do
 
 ## Funcionamento de um Compilador
 
-O `Front End` é responsável por transformar o código de raiz numa representação intermédia (IR), sinalizando os erros de sintaxe que possam estar contidos. É um processo na ordem de O(n) ou, no máximo, O(nlogn).
+O `Front End` é responsável por transformar o código de raiz numa representação intermédia (IR), sinalizando os erros de sintaxe e semântica que possam estar contidos. As representações internas são uma espécie de árvore sintática abstrata (*abstract syntax tree*) formada através de uma gramática. É um processo na ordem de O(n) ou, no máximo, O(nlogn).
 
-![Compilador](../Images/Compiler.png)
+![Funcionamento básico de um Compilador](../Images/Compiler.png)
 
 A representação interna serve para termos uma zona comum em todas as linguagens, permitindo generalizar o problema por motivos de eficiência e compatibilidade.
 
-O `Back End` é responsável por transformar a representação intermédia em código máquina, sinalizando os erros de semântica que possam estar contidos. É um processo NP-Completo.
+O `Back End` é responsável por transformar a representação intermédia em código máquina, sinalizando erros que possam estar contidos. É um processo NP-Completo.
 
