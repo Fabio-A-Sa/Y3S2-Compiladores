@@ -7,3 +7,7 @@ Já o interpretador apenas lê um executável e produz os resultados da sua exec
 
 Java usa as duas versões, numa `Just-in-time compilation`: compila as partes do código mais utilizadas, para aumento de performance.
 
+## Funcionamento de um Compilador
+
+![Compilador](../Images/Compilador.png)
+
