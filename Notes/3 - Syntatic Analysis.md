@@ -30,11 +30,11 @@ Quando existem duas ou mais derivações formalmente correctas para o mesmo inpu
 
 A implementação de um parser é um processo muito complexo, pois o sucesso de cada verificação depende da sequência de produções escolhidas que muitas vezes dependem da leitura do input até ao fim. Provar que um input pertence à linguagem ddefinida pela linguagem livre de contexto consiste em mostrar uma derivação possível. O contrário, ou seja, provar que não há nenhuma sequência de derivações de aceitação do input requer testar todas as combinações e sequências, o que torna o problema inviável.
 
-Existem, no entanto, alguns algoritmos e técnicas para implementar um parser:
+Existem, no entanto, alguns algoritmos e técnicas para implementar um parser. Os algoritmos são identificados por três caracteres:
 
-- `LL(0)`: Parse left to right with left most derivation with zero lookahead characters;
-- `LR(1)`: Parse left to right with rigth most derivation with one lookahead characters;
-- `LALR(1)`: <TODO>
+- L/R: parse left to right (L) or parse right to left (R);
+- L/R: left most derivation (L) or right most derivation (R);
+- N: parsing with N lookahead tokens;
 
 ### Top-Down Parsers - LL1
 
