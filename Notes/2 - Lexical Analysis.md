@@ -28,5 +28,3 @@ Transformação de DFAs em expressões regulares. É um algoritmo iterativo de p
 ## Automatização da tradução
 
 A tradução completa pode ser efetuada automaticamente através de ferramentas como `LEX`.
-
-<TODO>
