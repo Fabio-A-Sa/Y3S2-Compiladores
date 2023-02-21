@@ -21,4 +21,4 @@ O `Back End` é responsável por transformar a representação intermédia em c�
 - **Register Allocation**: coloca cada valor num registo quando este vai ser utilizado. Manipula um conjunto escasso de recursos e as instruções são Loads e Stores. A alocação ótima de registos é um problema NP-Completo;
 - **Instruction Scheduling**: pode aumentar o tempo de vida das variáveis usadas, para aumentar a funcionalidade e produtividade;
 
-Entre o Front End e o Back End podemos ter um `Middle End` que iterativamente melhora a qualidade do código sob o ponto de vista de eficiência temporal e utilização de recursos.
+Entre o Front End e o Back End podemos ter um `Middle End` que iterativamente melhora a qualidade do código sob o ponto de vista de eficiência temporal e utilização de recursos. 
