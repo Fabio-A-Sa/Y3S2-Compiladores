@@ -26,3 +26,13 @@ Procura o símbolo não terminal mais à esquerda ou à direita e expande de aco
 
 Quando existem duas ou mais derivações formalmente correctas para o mesmo input. A iliminação da ambiguidade é importante para não levar a erros ou não determinismos. Muitas vezes a solução passa por introduzir na gramática livre do contexto outros símbolos não terminais para forçar a associação à direita ou à esquerda.
 
+## Implementação de um Parser
+
+A implementação de um parser é um processo muito complexo, pois o sucesso de cada verificação depende da sequência de produções escolhidas que muitas vezes dependem da leitura do input até ao fim. Provar que um input pertence à linguagem ddefinida pela linguagem livre de contexto consiste em mostrar uma derivação possível. O contrário, ou seja, provar que não há nenhuma sequência de derivações de aceitação do input requer testar todas as combinações e sequências, o que torna o problema inviável.
+
+Existem, no entanto, alguns algoritmos e técnicas para implementar um parser:
+
+- LL(0)
+- LR(1)
+- <TODO>
+
