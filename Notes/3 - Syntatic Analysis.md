@@ -53,9 +53,15 @@ S1 -> b S2
 S2 -> a S2 | e
 ```
 
-É necessário também usar *predictive parsing* para minimizar o número de backtracking devido a erros na escolha das produções da gramática.
+É necessário também usar *predictive parsing* para minimizar o número de backtracking devido a erros na escolha das produções da gramática. O algoritmo deve escolher uma produção escolhida no conjunto `First(alpha)+` tal que essa produção possa derivar diretamente (ou indiretamente, no caso da primeira derivação ser epsilon) o mesmo símbolo terminal que a função avista no lookahead. 
 
-<TODO> até 32
+A gramática escolhida diz-se LL1 se existir uma derivação:
+
+```note
+A -> alpha | beta
+```
+
+Tal que não haja interseção entre `First(alpha)+` e `First(beta)+`, ou seja, a escolha do algoritmo será determinística pois só há uma derivação que vai originar o símbolo terminal em *left hand side* igual ao token do lookahead.
 
 ### Bottom-Up Parsers
 
