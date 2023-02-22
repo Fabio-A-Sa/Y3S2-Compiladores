@@ -32,7 +32,31 @@ A implementação de um parser é um processo muito complexo, pois o sucesso de 
 
 Existem, no entanto, alguns algoritmos e técnicas para implementar um parser:
 
-- LL(0)
-- LR(1)
-- <TODO>
+- `LL(0)`: Parse left to right with left most derivation with zero lookahead characters;
+- `LR(1)`: Parse left to right with rigth most derivation with one lookahead characters;
+- `LALR(1)`: <TODO>
 
+### Top-Down Parsers - LL1
+
+Começa pelo símbolo inicial e tenta acertar com as produções de acordo com a gramática livre de contexto escolhida da esquerda para a direita e com o primeiro token do input não consumido. Se escolher mal, acontece backtracking. 
+
+O algoritmo é mais simples mas não dá para todas as gramáticas, por exemplo as gramáticas recursivas à esquerda pois resulta em ciclos infinitos durante a expansão:
+
+```note
+S -> S a | b
+```
+
+É necessário nestes casos eliminar a recursão à esquerda, adicionando um novo símbolo terminal e optando pela recursão à direita:
+
+```note
+S1 -> b S2
+S2 -> a S2 | e
+```
+
+É necessário usar *predictive parsing* para minimizar o número de backtracking devido a erros na escolha das produções da gramática.
+
+<TODO>
+
+### Bottom-Up Parsers - LR1
+
+Começamos nas folhas (símbolos terminais) e comprime de acordo com as produções da gramática, também da esquerda para a direita. É um algoritmo mais complexo mas também consegue processar mais gramáticas.
