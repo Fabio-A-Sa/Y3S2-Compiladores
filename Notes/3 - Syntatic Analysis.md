@@ -55,7 +55,7 @@ S2 -> a S2 | e
 
 É necessário usar *predictive parsing* para minimizar o número de backtracking devido a erros na escolha das produções da gramática.
 
-<TODO>
+<TODO> até 32
 
 ### Bottom-Up Parsers - LR1
 
