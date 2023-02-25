@@ -78,9 +78,16 @@ Z -> B | C | D
 
 Precisamos de uma linha para cada símbolo não terminal e uma coluna para cada símbolo terminal. A tabela preenche-se com as produções de acordo com o First e/ou Follow dos símbolos não terminais. Entradas na tabela vazias correspondem a erro na árvore de *parsing*.
 
-<TODO>
+Uma entrada (Símbolo Não Terminal, Símbolo Terminal) define-se:
+- Com a regra Símbolo Não Terminal ->  Beta, se Símbolo Terminal pertencer ao First(Beta)
+- Com a regra Símbolo Não Terminal -> Epsilon, se Símbolo Terminal pertencer ao Follow(Beta) e a gramática contiver o passo Símbolo Não Terminal -> Epsilon
+- Erro, célula deixada em branco, se as primeiras duas regras não puderem ser cumpridas
 
-### LR
+Se alguma entrada for definida muitas vezes, a gramática não goza da propriedade LL1.
+
+### Bottom-Up Parsers - LR
+
+Começamos nas folhas (símbolos terminais) e comprime de acordo com as produções da gramática, também da esquerda para a direita. É um algoritmo mais complexo mas também consegue processar mais gramáticas.
 
 <TODO>
 
@@ -107,8 +114,3 @@ Usar uma tabela LR(K):
 Consegue processar gramáticas mais complicadas, mas a sua execução é mais complexa e recorre a duas pilhas: uma dos estados e uma dos símbolos.
 
 Primeiro criar um DFA que codifica todas as possibilidades de estados que podem ser combinados. As transições podem ocorrer com símbolos terminais e não terminais.
-
-
-### Bottom-Up Parsers
-
-Começamos nas folhas (símbolos terminais) e comprime de acordo com as produções da gramática, também da esquerda para a direita. É um algoritmo mais complexo mas também consegue processar mais gramáticas.
