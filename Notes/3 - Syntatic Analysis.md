@@ -78,6 +78,37 @@ Z -> B | C | D
 
 Precisamos de uma linha para cada símbolo não terminal e uma coluna para cada símbolo terminal. A tabela preenche-se com as produções de acordo com o First e/ou Follow dos símbolos não terminais. Entradas na tabela vazias correspondem a erro na árvore de *parsing*.
 
+<TODO>
+
+### LR
+
+<TODO>
+
+left to right
+rightmost derivation
+
+começa com a entire string e vai agrupando até atingir o símbolo inicial, usando uma *shift reduce parser*
+
+shift: mudar o apontador para os tokens seguintes;
+reduce: retirar os símbolos da parte direita das produções e colocar no topo da pilha o símbolo não terminal da esquerda;
+
+o input é aceite quando chegamos com sucesso ao símbolo inicial da gramática com todos os tokens do input estão consumidos.
+
+É bom porque não nos precisamos de preocupar com problemas de left recursion da gramática nem com o seu left factoring.
+
+Problemas:
+- fazer o match dos tokens com as produções;
+- pode haver mais do que um match;
+- há casos onde podemos fazer um shift ou um reduce;
+
+Solução:
+Usar uma tabela LR(K):
+
+Consegue processar gramáticas mais complicadas, mas a sua execução é mais complexa e recorre a duas pilhas: uma dos estados e uma dos símbolos.
+
+Primeiro criar um DFA que codifica todas as possibilidades de estados que podem ser combinados. As transições podem ocorrer com símbolos terminais e não terminais.
+
+
 ### Bottom-Up Parsers
 
 Começamos nas folhas (símbolos terminais) e comprime de acordo com as produções da gramática, também da esquerda para a direita. É um algoritmo mais complexo mas também consegue processar mais gramáticas.
