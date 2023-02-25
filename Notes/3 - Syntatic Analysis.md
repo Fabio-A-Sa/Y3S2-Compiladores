@@ -63,6 +63,21 @@ A -> alpha | beta
 
 Tal que não haja interseção entre `First(alpha)+` e `First(beta)+`, ou seja, a escolha do algoritmo será determinística pois só há uma derivação que vai originar o símbolo terminal em *left hand side* igual ao token do lookahead.
 
+A gramática tem de ser `left factoring`, ou seja, com propriedade LL1. Todas as derivações do lado direito têm de ter os primeiros símbolos terminais diferentes (não pode ter prefixos comuns):
+
+```note
+# Not LL1
+A -> aB | aC | aD | Y
+
+# LL1
+A -> aZ | Y
+Z -> B | C | D
+```
+
+#### Table-driven Top-Down Parsers
+
+Precisamos de uma linha para cada símbolo não terminal e uma coluna para cada símbolo terminal. A tabela preenche-se com as produções de acordo com o First e/ou Follow dos símbolos não terminais. Entradas na tabela vazias correspondem a erro na árvore de *parsing*.
+
 ### Bottom-Up Parsers
 
 Começamos nas folhas (símbolos terminais) e comprime de acordo com as produções da gramática, também da esquerda para a direita. É um algoritmo mais complexo mas também consegue processar mais gramáticas.
