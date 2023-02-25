@@ -87,17 +87,10 @@ Se alguma entrada for definida muitas vezes, a gramática não goza da proprieda
 
 ### Bottom-Up Parsers - LR
 
-Começamos nas folhas (símbolos terminais) e comprime de acordo com as produções da gramática, também da esquerda para a direita. É um algoritmo mais complexo mas também consegue processar mais gramáticas.
+Começamos nas folhas (símbolos terminais) e comprime de acordo com as produções da gramática, também da esquerda para a direita (`shift-reduce parser`). É um algoritmo mais complexo mas também consegue processar mais gramáticas. É uma abordagem *Left to Right* e *Right Most Derivation*.
 
-<TODO>
-
-left to right
-rightmost derivation
-
-começa com a entire string e vai agrupando até atingir o símbolo inicial, usando uma *shift reduce parser*
-
-shift: mudar o apontador para os tokens seguintes;
-reduce: retirar os símbolos da parte direita das produções e colocar no topo da pilha o símbolo não terminal da esquerda;
+- shift: mudar o apontador para os tokens seguintes;
+- reduce: retirar os símbolos da parte direita das produções e colocar no topo da pilha o símbolo não terminal da esquerda;
 
 o input é aceite quando chegamos com sucesso ao símbolo inicial da gramática com todos os tokens do input estão consumidos.
 
