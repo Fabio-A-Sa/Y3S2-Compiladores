@@ -102,3 +102,22 @@ Uma solução possível é usar uma tabela LR(K), que consegue processar gramát
 #### Handle
 
 Substring do input inicial (*right-sentential*) que coincide com a parte direita de uma produção da gramática. É usada para fazer a próxima redução. É necessário usar uma forma eficiente para detectar os possíveis handles na *sentence* inicial: `handle pruning`. O algoritmo faz preferencialmente reduções, mas há gramáticas que num determinado ponto permitem fazer reduções ou shifts, levando a um provável erro.
+
+#### Items
+
+São formados por cada produção da gramática. Codifica que parte é que já vimos / que parte é que está na stack e que parte é que poderá vir a seguir.
+
+```note
+X -> (X) # produção da gramática
+X -> *(X) # primeiro item, nada na stack
+X -> (*X) # segundo item, '(' está na stack, poderá vir acompanhado de 'X)'
+X -> (X*) # terceiro item, '(X' está na stack, poderá vir acompanhado de ')'
+X -> (X)* # quarto item, parte direita da produção, fazer redução
+```
+
+<TODO-HELP>
+
+--- pdf slr...
+
+### SLR - 
+
