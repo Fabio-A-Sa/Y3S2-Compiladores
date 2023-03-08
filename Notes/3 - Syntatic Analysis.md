@@ -98,3 +98,7 @@ O input é aceite quando chegamos com sucesso ao símbolo inicial da gramática 
 - há casos onde podemos fazer um shift ou um reduce;
 
 Uma solução possível é usar uma tabela LR(K), que consegue processar gramáticas mais complicadas, mas a sua execução é mais complexa e recorre a duas pilhas: uma dos estados e uma dos símbolos.
+
+#### Handle
+
+Substring do input inicial (*right-sentential*) que coincide com a parte direita de uma produção da gramática. É usada para fazer a próxima redução. É necessário usar uma forma eficiente para detectar os possíveis handles na *sentence* inicial: `handle pruning`. O algoritmo faz preferencialmente reduções, mas há gramáticas que num determinado ponto permitem fazer reduções ou shifts, levando a um provável erro.
