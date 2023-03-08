@@ -121,3 +121,6 @@ X -> (X)* # quarto item, parte direita da produção, fazer redução
 
 ### SLR - 
 
+O algoritmo preferencialmente reduz o input na stack, mas como podem existir vários conflitos *shift/reduce* apenas vai reduzir quando o que vier a seguir estiver no conjunto Follow dos símbolos.
+
+<TODO-HELP-PARTE2>
