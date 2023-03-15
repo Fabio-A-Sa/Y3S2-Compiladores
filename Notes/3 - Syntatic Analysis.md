@@ -124,3 +124,20 @@ X -> (X)* # quarto item, parte direita da produção, fazer redução
 O algoritmo preferencialmente reduz o input na stack, mas como podem existir vários conflitos *shift/reduce* apenas vai reduzir quando o que vier a seguir estiver no conjunto Follow dos símbolos.
 
 <TODO-HELP-PARTE2>
+
+## Syntax-Directed Definitions
+
+Há necessidade de fazer testes de correção nos programas que não podem ser verificados apenas com a gramática. Precisa de saber o tipo das variáveis, como podem ser usadas, variáveis atribuídas mas não declaradas, acesso a zonas fora do array, número de argumentos em cada função, tipos de retorno, entre outros.
+
+### Attribute Grammars
+
+Gramática livre de contexto aumentada com um conjunto de regras. Cada símbolo (terminal e não terminal) possui um conjunto de valores e atributos. As regras explicitam como computar o valor para cada atributo e implicitamente definem um grafo de dependências das operações.
+- Atributos herdados: usam regras e valores dos nós superiores (pais). Pode haver dependências laterais, o que torna mais complexo.
+- Atributos sintetizados: usam regras e valores dos nós inferiores (filhos). Funcionam com *LR parsing* porque conseguem fazer a análise bottom-up.
+
+Permite calcular valores com base na sintaxe, realizar computação com os valores atribuídos, inserir testes lógicos. O grafo de dependências das regras deve ser **acíclico**.<br>
+Como a complexidade aumenta rapidamente com as restrições de memória e custo associados a cada operação load e store, esta técnica só é usado para `type checking`.
+
+## Syntax-Directed Translations
+
+Processo de tradução guiado pela gramática livre de contexto, associando atributos e regras de semântica com produções que usam valores desses mesmos atributos.
