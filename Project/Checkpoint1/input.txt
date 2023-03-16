@@ -1,0 +1,26 @@
+import io;
+
+class Fac{
+
+	public int computeFac(int num) {
+	    int num_aux;
+	    if(num<1)
+	        num_aux = 1;
+	    else if(num==1)
+	        num_aux += 1;
+        else
+            num_aux = num * 3;
+        return num_aux;
+	}
+
+	public static void main(String[] args){
+        for(i=0; i<5; i++)
+            a+=i;
+
+        while(foo.length != 0)
+            a = false;
+
+        Moo foo;
+        foo.first(1).second(2);
+	}
+}
