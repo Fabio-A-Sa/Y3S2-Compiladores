@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.up.fe.comp.SymbolTableTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-18T14:56:07" hostname="fabio" time="0.414">
+  <properties/>
+  <testcase name="Parameters" classname="pt.up.fe.comp.SymbolTableTest" time="0.346"/>
+  <testcase name="Methods" classname="pt.up.fe.comp.SymbolTableTest" time="0.023"/>
+  <testcase name="LocalVars" classname="pt.up.fe.comp.SymbolTableTest" time="0.01"/>
+  <testcase name="ClassAndSuper" classname="pt.up.fe.comp.SymbolTableTest" time="0.011"/>
+  <testcase name="NumImports" classname="pt.up.fe.comp.SymbolTableTest" time="0.009"/>
+  <testcase name="Fields" classname="pt.up.fe.comp.SymbolTableTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,7 @@
+class MethodsAndFields{
+	public int getField1(){
+	    int a;
+		return field1;
+	}
+
+}
