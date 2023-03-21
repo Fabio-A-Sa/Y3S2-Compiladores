@@ -141,3 +141,5 @@ Como a complexidade aumenta rapidamente com as restrições de memória e custo 
 ## Syntax-Directed Translations
 
 Processo de tradução guiado pela gramática livre de contexto, associando atributos e regras de semântica com produções que usam valores desses mesmos atributos.
+
+<TODO>
