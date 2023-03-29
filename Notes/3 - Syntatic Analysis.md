@@ -24,7 +24,7 @@ Procura o símbolo não terminal mais à esquerda ou à direita e expande de aco
 
 ### Gramáticas Ambíguas
 
-Quando existem duas ou mais derivações formalmente correctas para o mesmo input. A iliminação da ambiguidade é importante para não levar a erros ou não determinismos. Muitas vezes a solução passa por introduzir na gramática livre do contexto outros símbolos não terminais para forçar a associação à direita ou à esquerda.
+Quando existem duas ou mais derivações formalmente correctas para o mesmo input. A eliminação da ambiguidade é importante para não levar a erros ou não determinismos. Muitas vezes a solução passa por introduzir na gramática livre do contexto outros símbolos não terminais para forçar a associação à direita ou à esquerda.
 
 ## Implementação de um Parser
 
