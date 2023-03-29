@@ -115,15 +115,9 @@ X -> (X*) # terceiro item, '(X' está na stack, poderá vir acompanhado de ')'
 X -> (X)* # quarto item, parte direita da produção, fazer redução
 ```
 
-<TODO-HELP>
-
---- pdf slr...
-
-### SLR - 
+### SLR
 
 O algoritmo preferencialmente reduz o input na stack, mas como podem existir vários conflitos *shift/reduce* apenas vai reduzir quando o que vier a seguir estiver no conjunto Follow dos símbolos.
-
-<TODO-HELP-PARTE2>
 
 ## Syntax-Directed Definitions
 
@@ -140,6 +134,6 @@ Como a complexidade aumenta rapidamente com as restrições de memória e custo 
 
 ## Syntax-Directed Translations
 
-Processo de tradução guiado pela gramática livre de contexto, associando atributos e regras de semântica com produções que usam valores desses mesmos atributos.
-
-<TODO>
+Processo de tradução guiado pela gramática livre de contexto, associando atributos e regras de semântica com produções que usam valores desses mesmos atributos. Os atributos podem ser:
+- `Herdados`, se os seus valores se propagarem de cima para baixo, ou seja, dos pais para os filhos;
+- `Sintetizados`, se os seus valores se propagarem de baixo para cima, ou seja, dos filhos para os pais;
