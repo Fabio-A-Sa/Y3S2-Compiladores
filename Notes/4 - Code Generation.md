@@ -42,8 +42,3 @@ t2 = i * 8 // cada elemento pode ter 8 bytes, offset
 t3 = a[t2]
 if t3 < V goto L
 ```
-
-## Expressions
-
-<TODO-HELP>
-
