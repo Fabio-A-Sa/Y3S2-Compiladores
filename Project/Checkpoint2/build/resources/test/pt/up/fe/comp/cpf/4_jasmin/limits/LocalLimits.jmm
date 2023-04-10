@@ -1,0 +1,10 @@
+class LocalLimits{
+
+    public int func(int a, int b){
+       int j;
+	   
+       a = b + 10 * (3 + this.func(3,4));
+       j = this.func(3,4);
+       return 1;
+    }
+}

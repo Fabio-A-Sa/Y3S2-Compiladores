@@ -1,0 +1,46 @@
+import ioPlus;
+class SwitchStat {
+
+
+    public int func(int a){
+        if(a < 1){
+          ioPlus.printResult(1);
+        } else {
+            if(a < 2){
+             ioPlus.printResult(2);
+            } else {
+                if(a < 3){
+                    ioPlus.printResult(3);
+                } else {
+                    if(a < 4){
+                        ioPlus.printResult(4);
+                    } else {
+                        if(a < 5){
+                            ioPlus.printResult(5);
+                        } else {
+                            if(a < 6){
+                                ioPlus.printResult(6);
+                            } else {
+                                ioPlus.printResult(7);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return 1;
+    }
+
+	public static void main(String[] args) {
+        SwitchStat d;
+        int a;
+        d = new SwitchStat();
+        a = d.func(0);
+        a = d.func(1);
+        a= d.func(2);
+        a= d.func(3);
+        a= d.func(4);
+        a= d.func(5);
+        a= d.func(6);
+	}
+}

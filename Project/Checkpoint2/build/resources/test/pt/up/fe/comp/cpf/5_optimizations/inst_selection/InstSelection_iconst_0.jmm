@@ -1,0 +1,7 @@
+class InstSelection_iconst_0 {
+	public int foo() {
+		int a;
+		a = 0;
+		return a;
+	}
+}

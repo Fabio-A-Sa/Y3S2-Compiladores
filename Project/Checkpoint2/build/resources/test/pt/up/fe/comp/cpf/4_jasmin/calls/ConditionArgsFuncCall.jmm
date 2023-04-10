@@ -1,0 +1,22 @@
+import ioPlus;
+class ConditionArgsFuncCall {
+
+    public int func(boolean a, boolean b, boolean c, boolean d){
+        ioPlus.printResult(10);
+        return 1;
+    }
+
+	public static void main(String[] args) {
+        int a;
+        int b;
+        boolean i;
+        boolean j;
+        ConditionArgsFuncCall d;
+        d = new ConditionArgsFuncCall();
+        a = 10;
+        b = 5;
+        i = true;
+        j = false;
+		a = d.func(a < b, i && j , a < b && i, !i);
+	}
+}

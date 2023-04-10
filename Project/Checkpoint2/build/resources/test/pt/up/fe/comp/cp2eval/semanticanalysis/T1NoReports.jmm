@@ -1,0 +1,24 @@
+import A;
+
+class T1NoReports {
+
+    int z;
+
+    int param(int x) {
+        return x;
+    }
+
+    int local() {
+        int y;
+        y = 0;
+        return y;
+    }
+
+    int field() {
+        return z;
+    }
+
+    int importUse() {
+        return A.getInt();
+    }
+}

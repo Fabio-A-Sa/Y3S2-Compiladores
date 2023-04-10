@@ -1,0 +1,12 @@
+import io;
+
+class A {
+ 
+	int a;
+ 
+    public static void main(String[] args){
+        int a;
+        a = 10;
+        io.print(10);
+    }
+}

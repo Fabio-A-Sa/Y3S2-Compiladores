@@ -1,0 +1,7 @@
+class InstSelection_sipush_32767 {
+	public int foo() {
+		int a;
+		a = 32767;
+		return a;
+	}
+}
