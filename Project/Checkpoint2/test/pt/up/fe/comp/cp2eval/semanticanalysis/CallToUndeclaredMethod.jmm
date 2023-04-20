@@ -1,0 +1,15 @@
+class CallToUndeclaredMethod {
+
+    public static void main(String[] args) {
+
+    }
+
+    public int foo() {
+        CallToUndeclaredMethod a;
+        a = new CallToUndeclaredMethod();
+
+        a.bar();
+
+        return 0;
+    }
+}

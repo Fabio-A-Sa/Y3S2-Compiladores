@@ -1,0 +1,14 @@
+myClass {
+	.construct myClass().V {
+		invokespecial(this, "<init>").V;
+	}
+	
+	.method public check(A.array.i32, N.i32, T.i32).bool {
+		i.i32 :=.i32 0.i32;
+		all.bool :=.bool 0.bool;
+		
+		if(i.i32) goto Then;
+
+		ret.bool all.bool;
+	}
+}

@@ -1,0 +1,15 @@
+import io;
+
+class Arithmetic_less {
+	public static void main(String[] args) {
+		boolean a;
+
+		a = 10 < 20;
+		
+		if(a) {
+			io.print(1);
+		} else {
+			io.print(0);		
+		}
+	}
+}

@@ -1,0 +1,21 @@
+import io;
+Arithmetic_and {
+
+    .construct Arithmetic_and().V {
+        invokespecial(this, "<init>").V;
+    }
+
+    .method public static main(args.array.String).V {
+a.bool :=.bool true.bool &&.bool false.bool;
+
+if (a.bool) goto ifbody_0;
+    invokestatic(io, "print", 0.i32).V;
+goto endif_0;
+ifbody_0:
+    invokestatic(io, "print", 1.i32).V;
+endif_0:
+
+ret.V;
+    }
+
+}

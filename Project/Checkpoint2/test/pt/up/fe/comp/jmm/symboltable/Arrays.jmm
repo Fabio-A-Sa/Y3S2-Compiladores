@@ -1,0 +1,6 @@
+class MethodsAndFields{
+	int[] pessoas;
+	boolean[] female;
+	String city[];
+
+}

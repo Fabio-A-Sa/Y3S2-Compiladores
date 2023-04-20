@@ -1,0 +1,22 @@
+import A;
+import B;
+
+class ObjectAssignmentPassImports {
+
+    public static void main(String[] args) {
+
+    }
+
+    public A foo() {
+        A a;
+        B b;
+
+        a = new A();
+        b = new B();
+
+        // A and B imported, assume it is correct
+        a = b;
+
+        return a;
+    }
+}

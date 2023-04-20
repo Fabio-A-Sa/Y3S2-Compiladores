@@ -1,0 +1,13 @@
+class T2NoReports {
+
+    int foo(int a) {
+        int r;
+
+        r = a * 1;
+        r = 2 + a;
+        r = 10 / 2;
+        r = a - a;
+
+        return r;
+    }
+}

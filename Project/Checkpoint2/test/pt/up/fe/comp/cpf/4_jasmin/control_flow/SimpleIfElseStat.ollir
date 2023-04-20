@@ -1,0 +1,31 @@
+import ioPlus;
+SimpleIfElseStat {
+
+    .construct SimpleIfElseStat().V {
+        invokespecial(this, "<init>").V;
+    }
+
+    .method public static main(args.array.String).V {
+a.i32 :=.i32 5.i32;
+b.i32 :=.i32 10.i32;
+
+if (a.i32 <.bool b.i32) goto ifbody_0;
+    invokestatic(ioPlus, "printResult", b.i32).V;
+goto endif_0;
+ifbody_0:
+    invokestatic(ioPlus, "printResult", a.i32).V;
+endif_0:
+a.i32 :=.i32 10.i32;
+b.i32 :=.i32 8.i32;
+
+if (a.i32 <.bool b.i32) goto ifbody_1;
+    invokestatic(ioPlus, "printResult", b.i32).V;
+goto endif_1;
+ifbody_1:
+    invokestatic(ioPlus, "printResult", a.i32).V;
+endif_1:
+
+ret.V;
+    }
+
+}

@@ -1,0 +1,10 @@
+class T7NoReports {
+
+    int foo(int a) {
+        return a;
+    }
+
+    int bar(T7NoReports c) {
+        return c.foo(10);
+    }
+}

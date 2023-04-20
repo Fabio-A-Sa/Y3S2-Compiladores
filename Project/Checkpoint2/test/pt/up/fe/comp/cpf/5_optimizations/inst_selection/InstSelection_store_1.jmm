@@ -1,0 +1,6 @@
+class InstSelection_store_1 {
+	public int foo(int a) {
+		a = 2;
+		return 0;		
+	}
+}

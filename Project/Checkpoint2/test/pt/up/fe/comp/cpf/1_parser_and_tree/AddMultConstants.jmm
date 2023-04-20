@@ -1,0 +1,8 @@
+import io;
+class AddMultConstants {
+	public static void main(String[] args) {
+		io.println(1+2*3);
+		io.println(1+2*3+5);
+		io.println(1+2*3+6/3);
+	}
+}

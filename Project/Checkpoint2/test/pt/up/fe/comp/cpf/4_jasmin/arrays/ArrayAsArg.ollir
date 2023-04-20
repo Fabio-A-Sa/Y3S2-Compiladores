@@ -1,0 +1,29 @@
+import ioPlus;
+ArrayAsArg {
+
+    .construct ArrayAsArg().V {
+        invokespecial(this, "<init>").V;
+    }
+
+    .method public func(a.array.i32).i32 {
+b.i32 :=.i32 arraylength(a.array.i32).i32;
+ret.i32 b.i32;
+    }
+    .method public func2().i32 {
+c.ArrayAsArg :=.ArrayAsArg new(ArrayAsArg).ArrayAsArg;
+invokespecial(c.ArrayAsArg,"<init>").V;
+temp0.i32 :=.i32 2.i32;
+a.array.i32 :=.array.i32 new(array, temp0.i32).array.i32;
+x.i32 :=.i32 invokevirtual(c.ArrayAsArg, "func", a.array.i32).i32;
+ret.i32 x.i32;
+    }
+    .method public static main(args.array.String).V {
+c.ArrayAsArg :=.ArrayAsArg new(ArrayAsArg).ArrayAsArg;
+invokespecial(c.ArrayAsArg,"<init>").V;
+x.i32 :=.i32 invokevirtual(c.ArrayAsArg, "func2").i32;
+invokestatic(ioPlus, "printResult", x.i32).V;
+
+ret.V;
+    }
+
+}

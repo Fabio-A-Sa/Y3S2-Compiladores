@@ -1,0 +1,13 @@
+
+import Other;
+// import Person;
+
+class BasicMethods extends Other {
+
+    public int[] func4(){
+        int[] k;
+        k = new int[1];
+        return k;
+    }
+
+}

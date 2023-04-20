@@ -1,0 +1,32 @@
+import ioPlus;
+
+class IfWhileNested {
+
+
+    public int func(int a){
+        int i;
+        boolean flag;
+		
+        flag = true;
+        i = 0;
+        while (i < a) {
+            if(flag){
+				ioPlus.printResult(1);
+			} else {
+				ioPlus.printResult(2);
+			}
+			
+			flag = !flag;
+			i = i + 1;
+		}			
+         
+        return 1;
+    }
+
+	public static void main(String[] args) {
+        IfWhileNested d;
+        int a;
+        d = new IfWhileNested();
+        a = d.func(3);
+	}
+}

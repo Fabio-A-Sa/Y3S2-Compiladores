@@ -1,0 +1,7 @@
+class ByteCodeIndexes1 {
+
+    public int func(int a) 
+    {
+        return a;
+    }
+}
