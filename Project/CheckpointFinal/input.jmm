@@ -1,0 +1,17 @@
+import ioPlus;
+class ComplexArgsFuncCall {
+
+    public int f1(int a) {
+        return a;
+    }
+
+    public int func(int b, int c) {
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        ComplexArgsFuncCall d;
+        d = new ComplexArgsFuncCall();
+        int a;
+    }
+}
