@@ -1,0 +1,17 @@
+myClass {
+	.construct myClass().V {
+		invokespecial(this, "<init>").V;
+	}
+	
+	.method public check(A.array.classArray, b.Foo).bool {
+		all.bool :=.bool 0.bool;
+		
+		c.Foo :=.Foo $2.b.Foo;
+		invokevirtual(c.Foo,"test",$1.A.array.classArray).V;
+
+		b.bool :=.bool !.bool true.bool;
+
+
+		ret.bool all.bool;
+	}
+}
