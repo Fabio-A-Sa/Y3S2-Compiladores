@@ -1,0 +1,12 @@
+import ioPlus;
+HelloWorld {
+.construct HelloWorld().V {
+invokespecial(this, "<init>").V;
+}
+
+.method public static main(args.array.String).V {
+invokestatic(ioPlus, "printHelloWorld").V;
+ret.V;
+}
+
+}

@@ -1,0 +1,21 @@
+Test {
+
+	.field intField.i32;
+
+	.construct Test().V {
+		invokespecial(this, "<init>").V;
+	}
+
+	.method public static main(args.array.String).V {
+		ret.V;
+	}
+
+	
+	.method public foo().V {
+
+		putfield(this, intField.i32, 10.i32).V;	
+		a.i32 :=.i32 getfield(this, intField.i32).i32;
+
+		ret.V;
+	}
+}
