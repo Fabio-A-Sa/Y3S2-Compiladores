@@ -1,0 +1,21 @@
+import B;
+
+class ObjectAssignmentPassExtends extends B {
+
+    public static void main(String[] args) {
+
+    }
+
+    public ObjectAssignmentPassExtends foo() {
+        ObjectAssignmentPassExtends a;
+        B b;
+
+        a = new ObjectAssignmentPassExtends();
+        b = new B();
+
+        // ObjectAssignmentPassExtends extends B
+        b = a;
+
+        return a;
+    }
+}

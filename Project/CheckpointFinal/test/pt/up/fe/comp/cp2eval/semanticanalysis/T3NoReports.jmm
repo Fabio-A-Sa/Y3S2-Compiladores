@@ -1,0 +1,11 @@
+class T3NoReports {
+
+    int foo(int[] a) {
+        int r;
+
+        r = a[0] + 1;
+        r = 2 + a[1] + 10 + a[2];
+
+        return r;
+    }
+}

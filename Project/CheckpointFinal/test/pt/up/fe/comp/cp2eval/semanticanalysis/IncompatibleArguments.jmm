@@ -1,0 +1,20 @@
+class IncompatibleArguments {
+
+    public static void main(String[] args) {
+
+    }
+
+    public int foo(int a) {
+        return a + 1;
+    }
+
+    public int bar() {
+        IncompatibleArguments a;
+        boolean b;
+
+        a = new IncompatibleArguments();
+        b = true;
+
+        return a.foo(b);
+    }
+}
