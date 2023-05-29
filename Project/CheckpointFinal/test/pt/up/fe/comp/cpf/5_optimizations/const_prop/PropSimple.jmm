@@ -1,0 +1,10 @@
+class PropSimple {
+    public int foo(){
+	  int a;
+	  a = 10;
+	  return a;
+	}
+    public static void main(String[] args) {
+
+    }
+}
