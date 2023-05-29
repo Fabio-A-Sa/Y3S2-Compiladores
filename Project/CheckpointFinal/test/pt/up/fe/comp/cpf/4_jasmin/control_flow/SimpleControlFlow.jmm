@@ -1,0 +1,19 @@
+import ioPlus;
+class SimpleControlFlow {
+
+
+	public static void main(String[] args) {
+		int a;
+		int b;
+
+		a = 2;
+		b = 3;
+
+        if(b < a){
+          ioPlus.printResult(a);
+        } else {
+           ioPlus.printResult(b);
+        }
+
+	}
+}

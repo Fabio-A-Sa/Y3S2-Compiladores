@@ -1,0 +1,20 @@
+import ioPlus;
+SimpleControlFlow {
+	.construct SimpleControlFlow().V {
+		invokespecial(this, "<init>").V;
+	}
+
+	.method public static main(args.array.String).V {
+
+		a.i32 :=.i32 2.i32;
+		b.i32 :=.i32 3.i32;
+		if (b.i32 >=.bool a.i32) goto ELSE_0;
+		invokestatic(ioPlus, "printResult", a.i32).V;
+		goto ENDIF_1;
+		ELSE_0:
+		invokestatic(ioPlus, "printResult", b.i32).V;
+		ENDIF_1:
+		ret.V;
+	}
+
+}

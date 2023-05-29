@@ -1,0 +1,17 @@
+import ioPlus;
+class ArrayAsArg {
+
+    public int func(int[] a) 
+    {   
+        int x;
+        int[] arr;
+        ArrayAsArg c;
+        
+		c = new ArrayAsArg();
+        arr = new int[2];
+        x = c.func(arr);
+        return x;
+    }
+
+    
+}

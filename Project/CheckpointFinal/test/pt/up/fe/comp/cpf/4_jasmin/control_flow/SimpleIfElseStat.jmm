@@ -1,0 +1,28 @@
+import ioPlus;
+class SimpleIfElseStat {
+
+
+	public static void main(String[] args) {
+		int a;
+		int b;
+
+		a = 5;
+		b = 10;
+
+        if(a < b){
+          ioPlus.printResult(a);
+        } else {
+           ioPlus.printResult(b);
+        }
+
+		a = 10;
+		b = 8;
+		
+        if(a < b){
+          ioPlus.printResult(a);
+        } else {
+           ioPlus.printResult(b);
+        }
+
+	}
+}

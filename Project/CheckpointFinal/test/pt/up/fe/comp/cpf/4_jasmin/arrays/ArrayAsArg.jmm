@@ -1,0 +1,32 @@
+import ioPlus;
+class ArrayAsArg {
+
+    public int func(int[] a) 
+    {   
+        int b;
+        b = a.length;
+        return b;
+    }
+
+    public int func2()
+    {   
+        int x;
+        int[] a;
+        ArrayAsArg c;
+        c = new ArrayAsArg();
+        a = new int[2];
+        x = c.func(a);
+        return x;
+    }
+    
+    public static void main(String[] args) 
+    {   
+        int x;
+        ArrayAsArg c;
+        c = new ArrayAsArg();
+        x = c.func2();
+        ioPlus.printResult(x);
+    }
+
+    
+}

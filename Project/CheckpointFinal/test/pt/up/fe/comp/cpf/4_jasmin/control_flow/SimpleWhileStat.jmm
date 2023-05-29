@@ -1,0 +1,18 @@
+import ioPlus;
+class SimpleWhileStat {
+
+
+	public static void main(String[] args) {
+        int a;
+        int i;
+
+		a = 3;
+        i = 0;
+		
+        while (i < a) {
+            ioPlus.printResult(i);
+            i = i + 1;
+        }
+
+	}
+}
