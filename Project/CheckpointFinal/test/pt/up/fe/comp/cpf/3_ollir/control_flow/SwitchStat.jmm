@@ -1,0 +1,37 @@
+import ioPlus;
+class SwitchStat {
+
+
+    public int func(int a){
+		int result;
+	
+        if(a < 1){
+          result =1;
+        } else {
+            if(a < 2){
+             result = 2;
+            } else {
+                if(a < 3){
+                    result = 3;
+                } else {
+                    if(a < 4){
+                        result = 4;
+                    } else {
+                        if(a < 5){
+                            result = 5;
+                        } else {
+                            if(a < 6){
+                                result = 6;
+                            } else {
+                                result = 7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+		
+        return result;
+    }
+
+}
