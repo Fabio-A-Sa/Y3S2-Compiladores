@@ -5,8 +5,7 @@ Normalmente um programa não é totalmente sequencial nem estático, pelo que o 
 O normal fluxo de dados pode ser interrompido por:
 - variáveis globais;
 - chamadas de procedimentos ou funções;
-- 
+- alocação dinâmica de memória;
 
 ## Activation Records
-
 
