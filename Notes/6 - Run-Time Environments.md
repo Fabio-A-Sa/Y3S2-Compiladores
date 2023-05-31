@@ -9,22 +9,20 @@ O normal fluxo de dados pode ser interrompido por:
 
 ## Activation Records
 
-AR é uma estrutura criada em tempo de execução (*runtime*) que mantém o estado em relação à execução de um procedimento. Pode ser alocada:
-- estaticamente: se o procedimento não fizer chamadas a outros;
-- na stack: se o tempo de vida da AR puder coincidir com o tempo de vida do procedimento e o código executar um retorno previsto;
-- na heap: se o procedimento puder viver fora de quem o chamou (threads) ou se o retorno for um objecto que contém o seu estado de execução;
-
+AR é uma estrutura criada em tempo de execução (*runtime*) que mantém o estado em relação à execução de um procedimento. ARs podem ser armazenados em uma área definida em tempo de compilação estática, desde que não haja chamadas recursivas. Dentro das linguagens imperativas com recursão como Pascal ou C, precisam ser alocadas na pilha, pois existem várias instâncias ativas das variáveis ​​locais em cada função. Para o caso de linguagens funcionais, onde a vida de algumas das variáveis ​​da função sobrevive à função em que foram criadas, elas precisam ser alocado na heap.
 Constutuição:
 
 - Parâmetros do procedimento ou função;
-- Conteúdo dos registos;
 - Espaço para o valor de retorno, se existir;
-- Endereço de retorno ao ponto do *caller* que o chamou, para depois de retornar poder continuar a sua execução geral;
-- Access link;
-- Caller's AR Pointer, para depois de retornar conseguir reestruturar o AR da procedimento que chamou este;
+- Endereço de retorno ao ponto do *caller* que o chamou, para depois de retornar poder continuar a sua execução geral (*frame pointer*);
+- Access link, para identificar a localização das variáveis não locais;
+- Espaço para variáveis locais, se existirem;
 
 Os registos do Caller são voláteis (podem ser modificados por qualquer função chamada), enquanto os registos do Callee são não-voláteis durante o seu *lifetime*.
 
+O `Frame-Pointer` (FP) ou Stack-Pointer é o campo no AR que aponta para a anterior função ou procedimento invocado. A cadeia de valores FP destaca, assim, a cadeia de chamadas atualmente ativa na call-tree. 
+
+O `Access Link` é um campo no AR que indica onde encontrar as variáveis ​​não locais do código da função que o AR correspondente usa para acessá-los. É usado apenas em linguagens que possuem escopos aninhados lexicais, como Pascal. Em C há apenas dois níveis de escopo, local e global e este campo não é necessário.
 
 ## Access links
 
