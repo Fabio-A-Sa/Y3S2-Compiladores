@@ -22,7 +22,7 @@ Notes that I take during theoretical lectures in Markdown. <br>
 A simple Java Minus Minus Compiler. The project is divided in four compilation stages, that you will be developing during the semester. The stages are Parser, Analysis, Optimization and Backend, and for each of these stages there is a corresponding Java interface that you will have to implement (e.g. for the Parser stage, you have to implement the interface JmmParser). There are three checkpoints:
 
 - [Checkpoint 1](./Project/Checkpoint1/), grade: 20/20
-- [Checkpoint 2](./Project/Checkpoint2/), grade: __/20
+- [Checkpoint 2](./Project/Checkpoint2/), grade: 19.25/20
 - [Checkpoint Final](./Project/CheckpointFinal/), grade: __/20
 
 With:
