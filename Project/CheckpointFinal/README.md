@@ -1,4 +1,4 @@
-# Compilers Project
+# Compilers Project (Grade: 19.4/20)
 
 Bárbara Carvalho - up202004695
 
